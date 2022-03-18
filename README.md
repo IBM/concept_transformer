@@ -62,8 +62,8 @@ optional arguments:
 ```
 
 
- <img src="/figs/binary_mnist_correct.png" width="500">
- <img src="/figs/binary_mnist_error.png" width="500">
+ <img src="/figs/binary_mnist_correct.png" width="300">
+ <img src="/figs/binary_mnist_error.png" width="300">
 
 ### Concept Transformer on VIT for CUB-200-2011 dataset
 

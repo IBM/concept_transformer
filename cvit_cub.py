@@ -14,8 +14,8 @@ def get_parser(parser):
                         help='Set debug mode in Lightning module')
     parser.add_argument('--data_dir', default='~/data/cub2011/', type=str,
                         help='dataset root directory')
-    parser.add_argument('--weight_decay', default=1e-5, type=float,
-                        help='weight decay (default: 1e-5)')
+    parser.add_argument('--weight_decay', default=1e-3, type=float,
+                        help='weight decay (default: 1e-3)')
     parser.add_argument('--attention_sparsity', default=0.5, type=float,
                         help='sparsity penalty on attention')
     parser.add_argument('--max_epochs', default=50, type=int)

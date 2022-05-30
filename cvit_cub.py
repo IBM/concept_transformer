@@ -1,4 +1,6 @@
 from argparse import ArgumentParser
+import numpy as np
+import torch
 from ctc import CTCModel, run_exp
 
 CTC_MODEL = 'cub_cvit'
@@ -29,8 +31,8 @@ def get_parser(parser):
                         help='run baseline without concepts')
     parser.add_argument('--expl_lambda', default=1.0, type=float,
                         help='weight of explanation loss')
-    parser.add_argument('--num_workers', default=8, type=int,
-                        help='number of workers')
+    parser.add_argument('--num_workers', default=8, type=int, help='number of workers')
+    parser.add_argument('--seed', default=42, type=int, help='random seed')
     return parser
 
 
@@ -40,6 +42,10 @@ args = parser.parse_args()
 
 args.ctc_model = CTC_MODEL
 args.data_name = DATA_NAME
+
+# Set random seeds
+torch.manual_seed(args.seed)
+np.random.seed(args.seed)
 
 model, trainer = run_exp(args)
 test_results = trainer.test()

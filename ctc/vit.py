@@ -8,7 +8,7 @@ from torch import nn
 from .ctc import CrossAttention
 
 
-def cub_cvit(backbone_name="vit_base_patch16_224", baseline=False, *args, **kwargs):
+def cub_cvit(backbone_name="vit_large_patch16_224", baseline=False, *args, **kwargs):
     """
     Args:
         baseline (bool): If true it returns the baseline model, which in this case it just the vit backbone without concept transformer

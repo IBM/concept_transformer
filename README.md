@@ -17,6 +17,7 @@ in International Conference on Learning Representations (ICLR), 2022 [[pdf]](htt
 * albumentations==1.0.3
 * timm==0.4.12
 * setuptools==59.5.0
+* epyc
 
 These can be installed using `pip` by running:
 
@@ -61,7 +62,10 @@ optional arguments:
   --expl_lambda EXPL_LAMBDA
   --n_train_samples N_TRAIN_SAMPLES
 ```
-
+For instance, to train ConceptTransformer on MNIST on 200 samples using explanations run:
+```bash
+python ctc_mnist.py --learning_rate 0.0004 --max_epochs 150 --warmup 20 --batch_size 32 --n_train_samples 200 --expl_lambda 2.0
+```
 
  <img src="/figs/binary_mnist_correct.png" width="300">
  <img src="/figs/binary_mnist_error.png" width="300">

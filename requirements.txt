@@ -10,3 +10,4 @@ setuptools==59.5.0
 albumentations==1.0.3
 timm==0.4.12
 matplotlib==3.5.1
+epyc

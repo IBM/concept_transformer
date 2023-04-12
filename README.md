@@ -10,6 +10,7 @@ in International Conference on Learning Representations (ICLR), 2022 [[pdf]](htt
 * torchvision==0.11.1
 * pytorch-lightning==1.4.8
 * lightning-bolts==0.3.4
+* torchmetrics==0.5
 * scipy==1.7.1
 * numpy==1.20.3
 * pandas==1.3.3

@@ -69,6 +69,9 @@ python ctc_mnist.py --learning_rate 0.0004 --max_epochs 150 --warmup 20 --batch_
 
  <img src="/figs/binary_mnist_correct.png" width="300">
  <img src="/figs/binary_mnist_error.png" width="300">
+ 
+We also provide the file `run_mnist_scaling_experiments.py` which runs `ctc_mnist.py` for varying values of the `n_train_samples` parameter to reproduce Figure 2 in the paper.
+
 
 ### Concept Transformer on VIT for CUB-200-2011 dataset
 
